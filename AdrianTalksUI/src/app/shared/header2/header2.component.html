@@ -1,0 +1,35 @@
+<header class="border-b-[1px] border-border relative">
+  <div class="container px-5 sm:px-3">
+    <div class="row items-center flex-wrap">
+      <div class="col-2 md:col-4">
+        <div class="flex items-center gap-x-8">
+          <button
+            class="w-8 cursor-pointer [&>span]:has-transition [&>span]:h-[2.5px] [&>span]:block [&>span]:bg-dark [&>span]:rounded focus:outline-none menu-btn2"
+            role="button"
+            aria-label="Toggle Navigation Menu"
+            [class.active]="isMenuOpened"
+            (click)="openMenu()"
+          >
+            <span class="w-1/2 mb-2"></span>
+            <span class="w-full mb-2"></span>
+            <span class="w-1/2 ml-auto"></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-8 md:col-4 text-center leading-[0]">
+        <a
+          class="py-4 sm:py-5 px-10 border-x-[1px] border-border inline-block focus:outline-none"
+          routerLink="/"
+        >
+          <img
+            alt="Adrian Talks"
+            width="143"
+            height="30"
+            class="w-[120px] sm:w-[143px] h-auto"
+            src="https://tasteimages.blob.core.windows.net/adriantalks/adriantalkslogo_v2.png"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</header>

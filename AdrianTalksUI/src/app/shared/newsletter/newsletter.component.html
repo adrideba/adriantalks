@@ -1,0 +1,157 @@
+<div
+  class="newsletter-panel fixed bg-dark/75 backdrop-blur-lg inset-0 z-[99] min-h-screen overflow-y-auto lg:flex items-center transition-all duration-300 no-scrollbar opacity-0 invisible [&>div]:translate-y-2"
+>
+  <button
+    type="button"
+    class="close-newsletter absolute top-6 sm:top-12 right-2 sm:right-12 bg-primary z-[999] h-12 w-12 grid place-items-center text-white cursor-pointer focus:outline-none rounded-full hover:bg-primary/80 hover:scale-105 has-transition scale-90 sm:scale-100 -translate-y-2"
+    aria-label="Close Newsletter"
+  >
+    <svg
+      class="-ml-[1px] -mt-[1px]"
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="M18 6 6 18"></path>
+      <path d="m6 6 12 12"></path>
+    </svg>
+  </button>
+  <div class="close-newsletter fixed inset-0"></div>
+  <div
+    class="px-4 sm:px-10 py-10 [&>div]:rounded-lg [&>div]:md:rounded-xl w-full max-w-7xl mx-auto [&>div]:py-10 [&>div]:lg:py-24 has-transition pointer-events-none [&>div]:pointer-events-auto z-50"
+  >
+    <div class="py-24 waveBg">
+      <div class="container">
+        <div class="row gy-4 items-center">
+          <div
+            class="md:col-10 lg:col-6 text-center text-white mx-auto lg:mx-0"
+          >
+            <svg
+              class="w-12 h-12 mx-auto mb-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+              ></path>
+            </svg>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl text-balance !leading-tight text-white mb-6 max-w-sm mx-auto text-center"
+            >
+              Subscribe to get the New e-book
+            </h2>
+            <p class="font-light leading-relaxed sm:mb-6">
+              Subscribe for the news, blogs, resources.
+            </p>
+          </div>
+          <div class="lg:col-5">
+            <div class="newsletterBlock">
+              <form
+                method="POST"
+                aria-label="subscribe-form"
+                class="flex flex-col gap-6"
+              >
+                <div>
+                  <label for="name" class="font-light mb-2 block"
+                    >Your Name <span class="text-primary">*</span></label
+                  >
+                  <input
+                    id="name"
+                    class="rounded-full px-6 h-14 w-full border border-[#758A7D] focus:border-primary focus-visible:outline-none bg-transparent focus-visible:shadow-none autofill-light"
+                    type="text"
+                    name="modal-sub-name"
+                  />
+                </div>
+                <div>
+                  <label for="email" class="font-light mb-2 block"
+                    >Your Unique Email
+                    <span class="text-primary">*</span></label
+                  >
+                  <input
+                    id="email"
+                    class="rounded-full px-6 h-14 w-full sm:w-[calc(100%_-_60px)] border border-[#758A7D] focus:border-primary focus-visible:outline-none bg-transparent focus-visible:shadow-none autofill-light"
+                    type="email"
+                    name="modal-sub-email"
+                  />
+                </div>
+                <div
+                  class="flex items-center gap-2 max-w-[80%] sm:max-w-none pr-[70px] sm:pr-[50px] text-balance"
+                >
+                  <svg
+                    class="flex-shrink-0"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 10.3333L8.4615 13L14 7M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
+                      stroke="#415649"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                  <span class="text-sm text-[#464536] font-light"
+                    >I Will appreciate receiving future promotional mails.</span
+                  >
+                </div>
+                <svg
+                  class="text-border absolute right-[50px] bottom-[50px]"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 101 101"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M101 0H0V101H1C1 45.7715 45.7715 1 101 1V0Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <button
+                  type="submit"
+                  class="bg-primary hover:bg-dark rounded-full h-14 w-14 button border-0 text-white group animate-top-right absolute bottom-0 right-0 disabled:grayscale disabled:cursor-not-allowed focus:outline-none"
+                >
+                  <span class="overflow-hidden leading-none">
+                    <svg
+                      class="inline-block animate-icon -mt-1"
+                      width="16"
+                      height="13"
+                      viewBox="0 0 10 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 9.00005L9 1.00005M9 1.00005H1.8M9 1.00005V8.20005"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+              </form>
+              <div class="text-sm text-start px-6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

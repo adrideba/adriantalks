@@ -1,0 +1,271 @@
+<main class="min-h-[80vh]">
+  <section class="py-16 md:py-24">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-4">
+          <h1
+            class="text-4xl md:text-5x text-white font-normal text-balance !leading-tight capitalize relative z-10 mix-blend-difference text-left"
+          >
+            Let’s work<br /><span
+              class="inline-block bg-white w-10 md:w-20 h-px mr-4 align-middle"
+            ></span
+            >Together
+          </h1>
+          <p class="font-light mt-8 text-[#464536] text-balance text-left">
+            Drop email to explore for collaborations or career opportunities.
+          </p>
+          <div class="flex lg:flex-col flex-wrap gap-4 mt-8">
+            <div
+              class="bg-light border-2 border-[#DBD8BD] rounded-full px-8 py-4 w-fit"
+            >
+              <span class="text-sm font-light text-[#464536]"
+                >Email Address</span
+              ><span class="flex items-center gap-x-2 mt-2"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path
+                    d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
+                  ></path></svg
+                ><span>info&#64;adriantalks.com</span></span
+              >
+            </div>
+            <div
+              class="bg-light border-2 border-[#DBD8BD] rounded-full px-8 py-4 w-fit"
+            >
+              <span class="text-sm font-light text-[#464536]">Phone</span
+              ><span class="flex items-center gap-x-2 mt-2"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path></svg
+                ><span>+356 9924-4790</span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-6 mt-12 lg:mt-0">
+          <form
+            [formGroup]="form"
+            (ngSubmit)="sendMessage()"
+            class="lg:pl-32 flex flex-col gap-y-10"
+          >
+            <input
+              class="hidden"
+              id="_subject"
+              type="hidden"
+              value="Message form Eyolo!"
+              name="_subject"
+            />
+            <div>
+              <label for="firstName" class="flex items-center gap-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="8" r="5"></circle>
+                  <path d="M20 21a8 8 0 0 0-16 0"></path></svg
+                ><span>First Name</span></label
+              >
+              <input
+                id="firstName"
+                class="w-full mt-4 bg-transparent border-b-2 border-[#c7c6bb] pb-4 focus:outline-none focus:border-primary autofill-light placeholder:text-[#817E61]"
+                placeholder="Joseph"
+                required=""
+                type="text"
+                name="firstName"
+                formControlName="firstName"
+              />
+            </div>
+            <div>
+              <label for="lastName" class="flex items-center gap-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="8" r="5"></circle>
+                  <path d="M20 21a8 8 0 0 0-16 0"></path></svg
+                ><span>Last Name</span></label
+              >
+              <input
+                id="lastName"
+                class="w-full mt-4 bg-transparent border-b-2 border-[#c7c6bb] pb-4 focus:outline-none focus:border-primary autofill-light placeholder:text-[#817E61]"
+                placeholder="Borg"
+                required=""
+                type="text"
+                name="lastName"
+                formControlName="lastName"
+              />
+            </div>
+            <div>
+              <label for="subject" class="flex items-center gap-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="8" r="5"></circle>
+                  <path d="M20 21a8 8 0 0 0-16 0"></path></svg
+                ><span>Subject</span></label
+              >
+              <input
+                id="subject"
+                class="w-full mt-4 bg-transparent border-b-2 border-[#c7c6bb] pb-4 focus:outline-none focus:border-primary autofill-light placeholder:text-[#817E61]"
+                placeholder="The subject you want to discuss about..."
+                required=""
+                type="text"
+                name="subject"
+                formControlName="subject"
+              />
+            </div>
+            <div>
+              <label for="email" class="flex items-center gap-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path
+                    d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
+                  ></path></svg
+                ><span>Email Address</span></label
+              >
+              <input
+                id="email"
+                class="w-full mt-4 bg-transparent border-b-2 border-[#c7c6bb] pb-4 focus:outline-none focus:border-primary autofill-light placeholder:text-[#817E61]"
+                placeholder="example@email.com"
+                required=""
+                type="email"
+                name="eyolo_email"
+                formControlName="email"
+              />
+            </div>
+            <div>
+              <label for="message" class="flex items-center gap-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                  ></path>
+                  <path d="M13 8H7"></path>
+                  <path d="M17 12H7"></path></svg
+                ><span>Message</span></label
+              >
+              <textarea
+                rows="4"
+                id="message"
+                name="message"
+                class="w-full mt-4 bg-transparent border-b-2 border-[#c7c6bb] pb-4 focus:outline-none focus:border-primary resize-none autofill-light placeholder:text-[#817E61]"
+                placeholder="Tell more about your idea"
+                formControlName="message"
+              ></textarea>
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="button button-lg group animate-top-right"
+                (click)="sendMessage()"
+              >
+                @if (!sent) {
+                <span
+                  class="relative overflow-hidden transition-none [&amp;>span]:block"
+                  ><span
+                    class="group-hover:-translate-y-[200%] group-hover:scale-y-[2] group-hover:rotate-12"
+                    ><i class="not-italic">Send Message</i></span
+                  ><span
+                    class="absolute left-0 top-0 scale-y-[2] rotate-12 translate-y-[200%] group-hover:translate-y-0 group-hover:scale-y-100 group-hover:rotate-0"
+                    ><i class="not-italic">Send Message</i></span
+                  ></span
+                >
+                } @if (sent) {
+                <span
+                  class="relative overflow-hidden transition-none [&amp;>span]:block"
+                  ><span
+                    class="group-hover:-translate-y-[200%] group-hover:scale-y-[2] group-hover:rotate-12"
+                    ><i class="not-italic">Message Sent</i></span
+                  ><span
+                    class="absolute left-0 top-0 scale-y-[2] rotate-12 translate-y-[200%] group-hover:translate-y-0 group-hover:scale-y-100 group-hover:rotate-0"
+                    ><i class="not-italic">Message Sent</i></span
+                  ></span
+                >
+                }
+                <span class="overflow-hidden leading-none -translate-y-[2px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="inline-block animate-icon"
+                  >
+                    <path d="m22 2-7 20-4-9-9-4Z"></path>
+                    <path d="M22 2 11 13"></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
